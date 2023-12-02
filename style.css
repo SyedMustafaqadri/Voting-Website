@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+/* Nav Start */
+
+.navbar {
+    background-color: #f1f6fa;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Nav Close */
+/* ----------------------------------------------- */
+/* Main Start */
+main {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.frame {
+    height: 80%;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addFriBox {
+    /* height: 15%; */
+    min-height: 5vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8f0fd;
+    border-radius: 20px 20px 0 0;
+}
+
+.addFri {
+    width: 10%;
+    height: 70%;
+    background-color: rgb(182, 236, 253);
+}
+
+.addFri:hover {
+    background-color: rgb(118, 220, 252);
+}
+
+.addFriInput {
+    margin-left: 10px;
+    width: 80%;
+    height: 70%;
+    text-align: center;
+}
+
+.addFriBox>input {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.447);
+}
+
+.friList-Prog {
+    height: 57.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82bdba;
+    border-radius: 0 0 20px 20px;
+}
+
+.friList {
+    height: 100%;
+    width: 40%;
+    background-color: rgb(223, 223, 223);
+    border-radius: 0 0 0 20px;
+}
+.friListOf {
+    height: 85%;
+    overflow: auto;
+}
+
+.voteProg {
+    height: 100%;
+    width: 60%;
+    background-color: rgb(223, 223, 223);
+    border-radius: 0 0 20px 0;
+    border-left: black solid 1px;
+}
+
+
+.voteProgOf{
+    height: 85%;
+    overflow: auto;
+}
+
+.friListPerp {
+    width: 100%;
+    border: black solid 1px;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+}
+
+.voteProgPerp {
+    width: 100%;
+    border: black solid 1px;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+}
+
+
+/* Main Close */
+/* ----------------------------------------------- */
+/* Footer Start */
+
+footer {
+    height: 10%;
+    background-color: #858585;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+}
+
+.copyright,
+.contact-info {
+    flex: 1;
+    margin-bottom: 10px;
+    /* Add margin to separate items on small screens */
+}
+
+.copyright p,
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+friList-Prog
+.contact-info p {
+    font-weight: bold;
+}
+
+
+/* Table Styles */
+
+.friListTable,
+.voteProgTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow-y: scroll;
+}
+
+
+.friListTable td,
+.voteProgTable td {
+    border: 1px solid #ddd;
+    padding: 8px;   
+}
+
+
+
+/* Button Styles in Table */
+
+.friListTable button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.friListTable button:hover{
+    background-color: #39743c;
+}
+
+
+
+
+/* Responsive Styles */
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    .logo {
+        height: 80px;
+    }
+
+    .addFri {
+        width: 15%;
+    }
+
+    .addFriBox {
+        min-height: 6vw;
+    }
+
+    .addFriInput {
+        width: 70%;
+    }
+}
+
+/* MOBILE_L */
+@media screen and (max-width: 600px) {
+    body {
+            padding-bottom: 90px;
+            /* Adjust this value based on your footer height */
+        }
+    nav {
+        height: 13%;
+        margin-bottom: 20px;
+    }
+
+    main{
+        height: auto;
+        padding-bottom: 20px 0;
+        /* Add some padding to the bottom */
+    }
+    .frame {
+        height: 100%;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        height: 90px;
+        margin-top: 20px;
+    }
+
+    .addFriBox {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 95px;
+    }
+
+    .addFriInput {
+        width: 90%;
+        margin: 5px 2px;
+    }
+
+    .addFri {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .friList-Prog {
+        flex-direction: column;
+    }
+    
+    .friList {
+        width: 100%;
+        height: 100%;
+        border-radius: 0%;
+    }
+    
+    .voteProg {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        border-top: black solid 1px;
+        border-left: none;
+    }
+}
+
+/* MOBILE_M */
+@media screen and (max-width: 375px) {
+
+    .copyright,
+    .contact-info {
+        flex: none;
+        width: 100%;
+    }
+}
